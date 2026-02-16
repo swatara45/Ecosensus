@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: #2e7d32;
-  height: 30px; /* fixed navbar height */
-  padding: 0 2rem; /* horizontal padding only */
+  height: 40px; /* fixed navbar height */
+  padding: 0 0 0 0rem; /* keep left padding, remove right padding */
   color: white;
   position: relative;
 }
@@ -15,14 +15,16 @@
   margin: 0;
 }
 
+/* Menu button */
 .menu-btn {
   background: #4caf50;
-  color:white;
-  padding: 5px 5px;
+  color: white;
+  padding: 5px 10px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 19px;
   border-radius: 5px;
+  margin: 0;
 }
 
 .dropdown {
@@ -54,19 +56,21 @@
 }
 
 
-.image3-container {
+
+ .image3-container {
   display: flex;
-  justify-content: flex-start; /* push content to the far left */
-  align-items: center; /* vertically center the image */
-  margin: 0; /* remove any default margin */
-  padding: 0; /* remove any default padding */
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
+/* Logo image flush to the left */
 .image3-img {
-  height: 40px; /* smaller logo image */
+  height: 50px;
   width: 80px;
   margin: 0;
   padding: 0;
+  object-fit: cover;
   display: block;
   
   /* Move image slightly up */
