@@ -48,7 +48,7 @@ function Careers() {
               href={`mailto:${careersEmail}?subject=Application for ${encodeURIComponent(
                 job.title
               )}&body=${encodeURIComponent(
-                `Dear GreenEarth Team,\n\nI would like to apply for the ${job.title} position. Please find my resume attached.\n\nThank you,\n[Your Name]`
+                `Dear EcoSensus Team,\n\nI would like to apply for the ${job.title} position. Please find my resume attached.\n\nThank you,\n[Your Name]`
               )}`}
             >
               <button>Upload resume</button>
