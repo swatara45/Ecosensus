@@ -15,7 +15,7 @@ function Homepage() {
           alt="Environmental Consulting"
         />
         <div className="hero-text">
-          <h1>Eco Sensus Consult</h1>
+          <h1>ecoSensus Consult</h1>
           <p>
             Delivering sustainable solutions for businesses and communities
             around the world. Protecting the environment, one project at a time.<br/>

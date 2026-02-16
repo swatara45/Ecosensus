@@ -15,7 +15,7 @@ function Navbar() {
       {/* Logo Image */}
       <div className="logo-container">
         <Link to="/">
-          <img src={image3} alt="Eco Sensus Consulting Logo" className="image3-img" />
+          <img src={image3} alt="ecoSensus Consulting Logo" className="image3-img" />
         </Link>
       </div>
 

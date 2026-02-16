@@ -29,7 +29,7 @@ function Careers() {
     <div className="page careers-page">
       <div className="careers-hero">
         <div className="careers-text">
-          <h1>Careers at Eco Sensus Consult</h1>
+          <h1>Careers at ecoSensus Consult</h1>
           <p>Join our mission to create sustainable solutions for a better planet!</p>
         </div>
         <div className="careers-image">
