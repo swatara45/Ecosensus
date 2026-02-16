@@ -73,7 +73,7 @@ function Homepage() {
           <div className="review-card">
             <img src={image1} alt="Customer Review" /> {/* example review image */}
             <p>
-              “ecoSensusg helped us become compliant and cut waste by 40%! The
+              “ecoSensus helped us become compliant and cut waste by 40%! The
               team was professional and insightful.”
             </p>
             <h4>- Samantha T.</h4>
