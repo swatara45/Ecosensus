@@ -1,19 +1,19 @@
-
-
+/* General Body */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #b1cfd0; /* blue background */
-  color: rgb(25, 27, 23); /* optional: make text white for contrast */
+  color: #191b17; /* text color */
 }
 
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
+  padding: 15px 20px;
   background: #2e7d32;
   color: white;
+  flex-wrap: wrap; /* wrap on small screens */
 }
 
 .navbar a {
@@ -22,28 +22,28 @@ body {
   text-decoration: none;
 }
 
+/* Hero Section */
 .hero-section {
-  display: flex;            /* side by side layout */
-  align-items: center;      /* vertical center */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 30vh;
+  gap: 2rem;
   padding: 2rem;
-  gap: 2rem;                /* space between image and text */
+  flex-wrap: wrap; /* stack on mobile */
 }
 
 .hero-section img {
-  width: 20%;               /* left side */
-  height: 50%;
+  width: 40%;
+  max-width: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
 
 .hero-text {
-  width: 50%;               /* right side */
+  width: 50%;
   color: #333;
-  text-align: left;         /* align text to left */
-  padding: 1rem;
+  text-align: left;
 }
 
 .hero-text h1 {
@@ -56,6 +56,7 @@ body {
   line-height: 1.5;
 }
 
+/* Info Section */
 .info-section {
   padding: 2rem 1rem;
   background-color: #f0f4f3;
@@ -85,51 +86,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Cards */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: #f4f4f4;
-  padding: 20px;
-  width: 250px;
-  border-radius: 8px;
-}
-
-/* Contact */
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-  gap: 10px;
-}
-
-input,
-textarea {
-  padding: 10px;
-}
-
-button {
-  background: #2e7d32;
-  color: white;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-}
-
-/* Footer */
-footer {
-  background: #1b5e20;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
 /* Reviews Section */
 .reviews-section {
   width: 100%;
@@ -139,7 +95,7 @@ footer {
 }
 
 .reviews-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -152,15 +108,16 @@ footer {
 
 .review-card {
   background: white;
-  padding: 50px 20px;
-  width: 390px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
   font-style: italic;
 }
 
 .review-card h4 {
-  margin-top: 20px;
+  margin-top: 10px;
   font-style: normal;
   color: #2e7d32;
 }
@@ -170,8 +127,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10rem;
-  margin-bottom: 0.1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .careers-text {
@@ -180,19 +138,19 @@ footer {
 
 .careers-image {
   flex: 1;
-  text-align: right;
+  text-align: center;
 }
 
 .careers-image img {
-  max-width: 150;
-  height: 350px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 .job-openings {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .job-card {
@@ -220,6 +178,7 @@ footer {
   background-color: #246b45;
 }
 
+/* Social Media */
 .social-media {
   margin-top: 2rem;
 }
@@ -237,18 +196,20 @@ footer {
   transform: scale(1.2);
 }
 
+/* Services Section */
 .services-page {
   padding: 1rem;
 }
 
 .services-container {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .services-lists {
-  flex: 1; /* left side takes more space */
+  flex: 1;
 }
 
 .services-section h2 {
@@ -268,8 +229,48 @@ footer {
 }
 
 .services-image img {
-  width: 700px;
-  max-width: 7g00px; /* optional max width */
-  border-radius: 1px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
   object-fit: cover;
+}
+
+/* Buttons */
+button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero-section, .careers-hero, .services-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .careers-text, .services-lists {
+    width: 100%;
+  }
+
+  .hero-section img, .careers-image img, .services-image img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .review-card {
+    width: 90%;
+  }
 }
