@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #2e7d32;
-  height: 20px; /* fixed navbar height */
+  height: 30px; /* fixed navbar height */
   padding: 0 2rem; /* horizontal padding only */
   color: white;
   position: relative;
