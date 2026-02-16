@@ -10,7 +10,7 @@ function Projects() {
 
       <ul className="list-disc pl-5 text-gray-700 space-y-3 mb-8">
         <li>
-          Central Region (Ayanfuri) – Perseus Mining, Edikan Site 
+          Perseus Mining, Edikan Site – Ayanfuri,Central Region 
           (Air quality monitoring, Noise monitoring, Blast monitoring)
         </li>
         
