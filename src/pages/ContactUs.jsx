@@ -6,9 +6,9 @@ function ContactUs() {
     <div className="page contact-page">
       <h1>Contact Us</h1>
       <p>
-        Telephone number: +1234567890 <br />
-        Email: gibertmahama@gmail.com <br />
-        Address: 123 Gilbert Street, Kasoa, <br />
+        Telephone number: +233553215584 <br />
+        Email: ecosensus@outlook.com <br />
+        Address: Mr 212 Victory St, Kasoa <br />
         Central Region, Ghana
       </p>
 

@@ -51,7 +51,7 @@ function Careers() {
                 `Dear GreenEarth Team,\n\nI would like to apply for the ${job.title} position. Please find my resume attached.\n\nThank you,\n[Your Name]`
               )}`}
             >
-              <button>Apply Now</button>
+              <button>Upload resume</button>
             </a>
           </div>
         ))}
