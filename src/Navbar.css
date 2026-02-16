@@ -2,20 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #2e7d32;
+  background-color: #2e7d32;
+  height: 20px; /* fixed navbar height */
+  padding: 0 2rem; /* horizontal padding only */
   color: white;
-  padding: 15px 30px;
   position: relative;
 }
 
+
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* smaller logo text */
+  margin: 0;
 }
 
 .menu-btn {
   background: #4caf50;
   color:white;
-  padding: 10px 15px;
+  padding: 5px 5px;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -50,22 +53,25 @@
   border-bottom: none;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2e7d32; /* dark green */
-  padding: 7rem 3rem;
-  color: white;
-  position: relative;
-}
 
 .image3-container {
   display: flex;
-  align-items: center;
+  justify-content: flex-start; /* push content to the far left */
+  align-items: center; /* vertically center the image */
+  margin: 0; /* remove any default margin */
+  padding: 0; /* remove any default padding */
 }
 
 .image3-img {
-  height: 50px; /* adjust as needed */
-  width: 70px;
+  height: 40px; /* smaller logo image */
+  width: 80px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  
+  /* Move image slightly up */
+  align-self: flex-start; /* aligns the image to the top of the navbar */
+  
+  /* Optional: fine-tune vertical position */
+  margin-top: -35px; /* adjust this value as needed */
 }
